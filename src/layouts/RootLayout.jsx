@@ -7,7 +7,7 @@ export default function RootLayout() {
   return (
     <Grid templateColumns="repeat(6,1fr)" alignItems="top">
       <GridItem
-      as="asign"
+      as="aside"
       colSpan={{ base : 6 , lg:2 , xl:1}}
       bg="purple.400"
       minHeight={{lg : '100vh'}}
