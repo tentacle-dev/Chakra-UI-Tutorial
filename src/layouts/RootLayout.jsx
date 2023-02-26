@@ -7,16 +7,16 @@ export default function RootLayout() {
     <Grid templateColumns="repeat(6,1fr)" alignItems="top">
       <GridItem
       as="asign"
-      colSpan="1"
+      colSpan={{ base : 6 , lg:2 , xl:1}}
       bg="purple.400"
-      minHeight="100hv"
-      p="30px"
+      minHeight={{lg : '100vh'}}
+      p={{base : '30px' , lg: '30px'}}
       >
         <span>Sidebar</span>
       </GridItem>
       <GridItem as="main"
       p="40px"
-      colSpan="5"
+      colSpan={{ base : 6 , lg: 4 , xl: 5}}
       >
         <Navbar />
         <Outlet />
